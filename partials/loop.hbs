@@ -35,17 +35,28 @@
 
 
       <a href="{{url}}" class="m-article-card__info-link" aria-label="{{title}}">
-        
-        {{!--  
+
+
+    {{#match primary_tag.name "=" "Articles" }}
+
         <div>
           <h2 class="m-article-card__title js-article-card-title {{#unless feature_image}}js-article-card-title-no-image{{/unless}}" title="{{title}}">
-            {{title}} TITLE
+            {{title}}
           </h2>  
-        </div>
-        --}}  
+          {{excerpt characters="80"}}....
+        </div>    
+
+    {{else}}
+
+    <div id='buzzsprout-small-player-{{id}}'></div>
+    <script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2244114.js?container_id=buzzsprout-small-player-{{id}}&player=small'></script>
+
+
+    {{/match}}
+
+    
         
-<div id='buzzsprout-small-player-{{id}}'></div>
-<script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2244114.js?container_id=buzzsprout-small-player-{{id}}&player=small'></script>
+        
 
           
         
