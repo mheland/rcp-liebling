@@ -16,6 +16,7 @@
     <link rel="preload" href="{{asset "js/vendor.js"}}" as="script" />
     <link rel="preload" href="{{asset "js/app.js"}}" as="script" />
 
+
     {{!-- This #block helper will try to preload page-specific assets --}}
     {{{block "preload"}}}
 
@@ -71,6 +72,9 @@
     </style>
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" media="screen" />
+
+    <!-- Wimpy Engine  -->
+    <script src="{{asset "wimpy/wimpy.js"}}"></script>
 
     {{!-- This #block helper will inject a stylesheet for a specific page --}}
     {{{block "styles"}}}
