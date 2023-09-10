@@ -219,6 +219,8 @@
 
 .loop-card-excerpt {
   padding-top: 15px;
+  font-family: "Bitter Regular", Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
 }
 
 .m-article-card__tag {
@@ -263,19 +265,20 @@
 //magnus
 
 .m-article-card__banner {
+  color: var(--titles-color);  
   width:100%;
   height:50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* global 92%+ browsers support */
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(110, 110, 110, 1) 100%);
-    color: #FFFFFF;    
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 300;
+    font-weight: bold;
     text-shadow: 1px 1px 3px #000000;
     border: solid #000000 1px;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-
     position:absolute;
     padding-top: 10px;
     

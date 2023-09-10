@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
   color: var(--primary-foreground-color);
   font-size: 1rem;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-display: swap;
   overflow-x: hidden;
   background-color: var(--background-color);
@@ -60,3 +60,9 @@ fieldset {
 .medium-zoom-image {
   z-index: 5;
 }
+
+.l-post-content  p {
+  font-family: 'Bitter Regular', Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.5em;
+}
+

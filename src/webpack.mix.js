@@ -33,4 +33,5 @@ mix
     ]
   })
   .copyDirectory('sass/fonts/source-sans-pro/', '../assets/fonts/source-sans-pro/')
+  .copyDirectory('sass/fonts/bitter/', '../assets/fonts/bitter/')
   .copy('sass/fonts/icomoon/*.*', '../assets/fonts/icomoon/');

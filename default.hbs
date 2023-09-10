@@ -24,38 +24,37 @@
     <style>
       /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
 
-      /* source-sans-pro-regular */
-      @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: local('SourceSansPro-Regular'),
-            url("{{asset 'fonts/source-sans-pro/latin/source-sans-pro-regular.woff2'}}") format('woff2'),
-            url("{{asset 'fonts/source-sans-pro/latin/source-sans-pro-regular.woff'}}") format('woff');
-      }
+    @font-face {
+    font-family: 'Bitter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bitter Regular'), url("{{asset 'fonts/bitter/Bitter-Regular.woff'}}") format('woff');
+    }
+    
 
-      /* source-sans-pro-600 */
-      @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: local('SourceSansPro-SemiBold'),
-            url("{{asset 'fonts/source-sans-pro/latin/source-sans-pro-600.woff2'}}") format('woff2'),
-            url("{{asset 'fonts/source-sans-pro/latin/source-sans-pro-600.woff'}}") format('woff');
-      }
+    @font-face {
+    font-family: 'Bitter Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bitter Italic'), url("{{asset 'fonts/bitter/Bitter-Italic.woff'}}") format('woff');
+    }
+    
 
-      /* source-sans-pro-700 */
-      @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: local('SourceSansPro-Bold'),
-            url("{{asset 'fonts/source-sans-pro/latin/source-sans-pro-700.woff2'}}") format('woff2'),
-            url("{{asset 'fonts/source-sans-pro/latin/source-sans-pro-700.woff'}}") format('woff');
-      }
+    @font-face {
+    font-family: 'Bitter Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bitter Bold'), url("{{asset 'fonts/bitter/Bitter-Bold.woff'}}") format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Bitter Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bitter Bold Italic'), url("{{asset 'fonts/bitter/Bitter-BoldItalic.woff'}}") format('woff');
+    }
+
 
       /* iconmoon */
       @font-face {
