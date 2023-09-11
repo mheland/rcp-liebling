@@ -301,6 +301,33 @@ h2.m-article-card__title {
   font-size: 1rem;
 }
 
+
+.podcast-card {
+  text-align: center;
+  background: rgb(210,210,210);
+  background: linear-gradient(180deg, rgba(210,210,210,1) 0%, rgba(0,0,0,1) 43%, rgba(0,0,0,1) 100%);
+  border-radius: 5px;
+
+
+}
+.podcast-item {
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.podcast-header {
+  padding: 30px;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+  
+}
+
+
+// Magnus end ---------------------
+
 .m-article-card__timestamp,
 .m-article-card__author-stats {
   display: flex;
