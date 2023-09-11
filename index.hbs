@@ -93,6 +93,26 @@ into the {body} of the default.hbs template --}}
           {{/if}}
         {{/get}}
         {{!-- The tag below iterates over all the posts --}}
+
+
+
+  <article class="m-article-card {{post_class}}">
+
+   <div class="m-article-card__info no-tag">
+
+
+    <img src="{{asset "images/slice4.svg"}}" style="width: 100%; height: auto;">
+    <img src="{{asset "images/slice3.svg"}}" style="width: 100%; height: auto;">
+    <img src="{{asset "images/slice2.svg"}}" style="width: 100%; height: auto;">
+    <img src="{{asset "images/slice1.svg"}}" style="width: 100%; height: auto;">
+
+
+    </div>
+  </article>
+
+
+
+
         {{> "loop"}}
       </div>
     </div>
