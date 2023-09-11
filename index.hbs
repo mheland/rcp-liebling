@@ -97,15 +97,29 @@ into the {body} of the default.hbs template --}}
 
 
   <article class="m-article-card {{post_class}}">
+ 
+   <div class="m-article-card__info no-tag podcast-card">
 
-   <div class="m-article-card__info no-tag">
+    <div class="podcast-header">
+    Listen on Spotify, Apple, and Google.
+    </div>
 
-
-    <img src="{{asset "images/slice4.svg"}}" style="width: 100%; height: auto;">
-    <img src="{{asset "images/slice3.svg"}}" style="width: 100%; height: auto;">
-    <img src="{{asset "images/slice2.svg"}}" style="width: 100%; height: auto;">
-    <img src="{{asset "images/slice1.svg"}}" style="width: 100%; height: auto;">
-
+    <div class="podcast-item">
+      
+      <a href="https://open.spotify.com/show/6Ycusng8Ap4GlwQKedHXn8" target="_blank">
+      <img src="{{asset "images/spotify-banner.png"}}" >
+      </a>
+    </div>
+    <div class="podcast-item">
+      <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xODAxNTExLnJzcw==" target="_blank">
+      <img src="{{asset "images/google-banner.png"}}" >
+      </a>
+    </div>
+    <div class="podcast-item">
+      <a href="https://podcasts.apple.com/us/podcast/real-clear/id1572207952" target="_blank">
+      <img src="{{asset "images/apple-banner.png"}}" >
+      </a>
+    </div>
 
     </div>
   </article>
