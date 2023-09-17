@@ -28,7 +28,8 @@ into the {body} of the default.hbs template --}}
   {{> hero background=@site.cover_image}}
 
   </section>
-  <div class="l-content">
+  
+  <div class="l-content">    
     <div class="l-wrapper" data-animate="fade-up">
       <div class="l-grid centered">
         {{#get "posts" filter="featured:true" include="authors,tags" limit="5" as |featured|}}
@@ -118,6 +119,11 @@ into the {body} of the default.hbs template --}}
     <div class="podcast-item">
       <a href="https://podcasts.apple.com/us/podcast/real-clear/id1572207952" target="_blank">
       <img src="{{asset "images/apple-banner.png"}}" >
+      </a>
+    </div>
+       <div class="podcast-item">
+      <a href="https://www.youtube.com/channel/UC-n2aBdM7sv4A6YK51lR5Vw" target="_blank">
+      <img src="{{asset "images/yt-pocast-banner.png"}}" >
       </a>
     </div>
 
