@@ -34,7 +34,8 @@
       TAG {{primary_tag.name}}
       Index: {{@index}}
 
-      {{^match primary_tag.name "pod" }}
+      
+      {{#has tag="Articles" }}
       <a href="{{url}}" aria-label="{{title}}">
         <div class="m-article-card__banner">{{title}}</div>
       </a>
@@ -77,7 +78,8 @@
       </script>
 
 
-      {{/match}}
+      {{/has}}
+      
 
 
 
