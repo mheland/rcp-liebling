@@ -5,7 +5,6 @@
 {{#is "post"}}
 <div class="m-recommended-slider__item swiper-slide">
 {{/is}}
-
   <article class="m-article-card {{#unless feature_image}}no-picture{{/unless}} {{post_class}}">
     <div class="m-article-card__picture">
       <a href="{{url}}" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
@@ -35,7 +34,7 @@
       TAG {{primary_tag.name}}
       Index: {{@index}}
 
-      {{#match primary_tag.name "Articles" }}
+      {{^match primary_tag.name "pod" }}
       <a href="{{url}}" aria-label="{{title}}">
         <div class="m-article-card__banner">{{title}}</div>
       </a>
