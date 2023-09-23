@@ -43,14 +43,14 @@ into the {body} of the default.hbs template --}}
                       #featured-bg-{{id}}
 
                         {
-                        background-image: url({{img_url feature_image size='l'}});
+                        background-image: url({{img_url feature_image size='l' format='webp' }});
                       }
 
                       @media(max-width: 768px) {
                             #featured-bg-{{id}}
 
                           {
-                          background-image: url({{img_url feature_image size='m'}});
+                          background-image: url({{img_url feature_image size='m' format='webp' }});
                         }
                       }
                     </style>
@@ -63,7 +63,7 @@ into the {body} of the default.hbs template --}}
                       {{primary_author.name}} {{authors autolink="false" from="2" prefix=(t "Among with" )
                       separator=" , " }}">
                       {{#if primary_author.profile_image}}
-                      <div style="background-image: url({{img_url primary_author.profile_image size=" xs"}});"></div>
+                      <div style="background-image: url({{img_url primary_author.profile_image size="xs"}});"></div>
                       {{else}}
                       <div style="background-image: url({{asset "images/default-avatar-square-small.jpg"}});"></div>
                       {{/if}}
