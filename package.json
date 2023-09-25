@@ -46,6 +46,10 @@
       "disable_fade_animation": {
         "type": "boolean",
         "default": false
+      },
+      "podcast_banner_action": {
+        "type": "text",
+        "default": "CLICK BELOW FOR MORE"
       }
     }
   },

@@ -40,7 +40,7 @@
       <a href="{{url}}" class="m-article-card__info-link" aria-label="{{title}}">
 
         <div class="loop-card-excerpt">
-          {{excerpt characters="100"}} <i>[More...]</i>
+          {{excerpt characters="100"}}<i>...</i>
         </div>
       </a>
 
@@ -53,12 +53,17 @@
       {{else}}
 
       <div id='wimpy-player-{{id}}' style="width:100%;height:50px;">
-
       </div>
 
+      <div class="podcast-cta">
+      {{@custom.podcast_banner_action}}
+      </div>
+
+
       <a href="{{url}}" class="m-article-card__info-link" aria-label="{{title}}">
-        <div>
-          <h2 class="m-article-card__title js-article-card-title {{#unless feature_image}}js-article-card-title-no-image{{/unless}}" >
+        
+        <div>      
+          <h2 class="m-article-card__podcast js-article-card-title{{#unless feature_image}}js-article-card-title-no-image{{/unless}}" >
             {{title}}
           </h2>
         </div>
